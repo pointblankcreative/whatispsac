@@ -28,8 +28,8 @@
       <!-- HEADER START -->
       <header class="container-fluid bg-dark p-4">
         <div class="row">
-          <div class="logo-cont">
-            <img src="./assets/img/WTF.png" alt="">
+          <div class="logo-cont m-auto m-md-0">
+            <img src="./assets/img/WTF.png" alt="WTF is PSAC Prairies?">
           </div>
         </div>
       </header>
@@ -37,46 +37,50 @@
 
       <!-- MAIN START -->
       <main>
-        <div class="container-fluid bg-danger p-4">
-          <div class="row">
-            <div class="col-lg-9 col-sm-12">
+
+        <div class="container-fluid bg-primary p-4 noisy">
+          <div class="row p-4">
               <h1>
-                You're probably wondering…WTF?
+                You're probably wondering what we do. But, Hey, maybe you know more than you think.
               </h1>
-            </div>
-            <div class="col-lg-3 col-sm-12">
-              <p>
+              <h2>
                 We're a union. But we're not like any union in the prairies.
-              </p>
-            </div>
+              </h2>
           </div>
         </div>
 
         <!-- Form div -->
         <div class="container-fluid">
           <div class="row no-gutters">
-            <div class="bg-success col-lg-4 col-sm-12 p-5">
-              <h2>
-                Don't believe us? Take our quiz and we'll prove you wrong.
-              </h2>
+            <div class="bg-success col-lg-3 col-sm-12 p-5">
+              <div class="">
+                <p>
+                  What to learn more about what we do? Take our quiz to put your labour knowledge to the test.
+                </p>
+              </div>
+              <div class="gears-icon mx-auto mt-2 d-block w-100">
+                <img src="./assets/img/QuestionMarkGears.png" alt="three question marks on top of gear icons">
+              </div>
             </div>
-            <div id="form" class="col-lg-8 col-sm-12">
+
+            <div id="form" class="col-lg-9 col-sm-12">
               <div data-tf-widget="bdTdHu8q" data-tf-iframe-props="title=Test-Typeform" data-tf-medium="snippet"
-                style="width:100%;height:400px;"></div>
+                style="width:100%;height:500px;"></div>
             </div>
           </div>
         </div><!-- Form div end -->
-
+        <div style="height: 50px; background-color: #DDFFBA;"></div>
+        <!-- Video div -->
+        
+        <div class="image-container">
+          <img src="./assets/img/PSAC_Prairie_Still_1920x1080.png" alt="WTF is PSAC Prairies? on top of a black gear icon" class="w-100 mx-auto d-block">
+  
+          <div class="overlay">
+            <img src="./assets/img/play.png" alt="play" class="play-btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/EZTSGkfm7a0" data-target="#myModal">
+          </div>
+        </div> <!-- Video div end-->
       </main>
       <!-- MAIN END -->
-
-      <!-- Video div -->
-      <button type="button" class="btn btn-default btn-lg video-btn bg-warning w-100" data-toggle="modal" data-src="https://www.youtube.com/embed/EZTSGkfm7a0" data-target="#myModal">Watch and Share <i class="fa-solid fa-chevron-right"></i></button>
-
-      <div class="container-fluid">
-        <img src="https://www.placecage.com/gif/1400/600" alt="" class="w-100">
-        <!-- <h1>Play</h1> -->
-      </div> <!-- Video div end-->
 
       <!-- Video Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -101,10 +105,7 @@
                 <a href="#" class="btn btn-warning mx-2"><img src="./assets/img/TW.png" alt="Twitter logo"> Share on Twitter</a>
                 <a href="#" class="btn btn-warning mx-2"><img src="./assets/img/YT.png" alt="Share icon"> Copy Link</a>
               </div>
-
-
             </div>
-
           </div>
         </div>
       </div>
@@ -112,17 +113,22 @@
 
 
       <!-- FOOTER -->
-      <footer class="container-fluid bg-dark p-4">
-        <div class="row no-gutters justify-content-between align-items-middle">
-          <div class="col-lg-4 col-sm-12">
+      <footer class="container-fluid bg-dark" >
+        <div class="no-gutters d-flex flex-column flex-md-row justify-content-between align-items-end flex-wrap p-4">
+
+          <div class="col-sm-12 col-lg-4">
             <p>Prairies.psac.ca</p>
           </div>
-          <ul class="row col-lg-4 col-sm-12">
-            <li class="icon"><img src="./assets/img/facebook.png" alt="Facebook"></li>
-            <li class="icon"><img src="./assets/img/instagram.png" alt="Instagram"></li>
-            <li class="icon"><img src="./assets/img/twitter.png" alt="Twitter"></li>
-            <li class="icon"><img src="./assets/img/youtube.png" alt="Youtube"></li>
-          </ul>
+
+          <div class="col-sm-12 col-lg-4 ">
+            <div class="row justify-content-start justify-content-md-end">
+              <div class="icon"><img src="./assets/img/facebook.png" alt="Facebook"></div>
+              <div class="icon"><img src="./assets/img/instagram.png" alt="Instagram"></div>
+              <div class="icon"><img src="./assets/img/twitter.png" alt="Twitter"></div>
+              <div class="icon"><img src="./assets/img/youtube.png" alt="Youtube"></div>
+
+            </div>
+          </div>
         </div>
 
       </footer>

@@ -1,16 +1,3 @@
-// Override Bootstrap's Sass default variables
-//
-// Nearly all variables in Bootstrap are written with the `!default` flag.
-// This allows you to override the default values of those variables before
-// you import Bootstrap's source Sass files.
-//
-// Overriding the default variable values is the best way to customize your
-// CSS without writing _new_ styles. For example, change you can either change
-// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
-// `body { color: red; }`.
-
-
-//
 // Bring in Bootstrap
 //
 
@@ -30,9 +17,10 @@ $enable-shadows: true;
 
 // Customize some defaults
 $body-color: #333;
-$body-bg: #fff;
-$border-radius: .4rem;
-$success: #BC9AD6;
+$body-bg: #000;
+$success: #405743;
+$primary: #7F0E8F;
+$accent: #DDFFBA;
 $dark: #000;
 $danger: #B71A1F;
 $warning: #F7E221;
@@ -95,11 +83,9 @@ $warning: #F7E221;
   overflow: hidden;
   padding: 0;
 }
-
 body {
   color: #fff;
-  text-transform: uppercase;
-
+  background-color: transparent;
 }
 ul,
 li {
@@ -107,12 +93,10 @@ li {
   padding: 0;
   list-style: none;
 }
-
 img {
   width: 100%;
   display: block;
 }
-
 .icon {
   height: 50px;
   width: 50px;
@@ -129,47 +113,73 @@ img {
 .logo-cont {
   height: 65px;
   width: 365px;
+  margin: 10px;
 }
+
+// .noisy {
+//   background: linear-gradient(0deg, rgba(127,14,143,1), rgba(0,0,0,0)), url(https://grainy-gradients.vercel.app/noise.svg);
+//   height: fit-content;
+// }
 
 h1 {
   font-family: 'Passion One', cursive;
-  font-size: 56px;
-  letter-spacing: 1.4px;
-  line-height: 48px;
-  color: $warning;
+  font-size: 46px;
+  letter-spacing: 1.15px;
+  line-height: 42px;
+  text-transform: uppercase;
 }
-
 h2 {
   font-family: 'Passion One', cursive;
-  font-size: 36px;
-  line-height: 36px;
-  color: #000;
+  font-size: 25px;
+  letter-spacing: 0.63px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $warning;
 }
-
 p {
   font-family: 'Pragati Narrow', sans-serif;
-  font-size: 28px;
-  line-height: 32px;
-  color: #fff;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  color: $warning;
 }
-
-a.btn {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  letter-spacing: 0.32px;
-  line-height: 20px;
-  i {
-    font-weight: 900;
-  }
+.gears-icon {
+  max-width: 200px;
 }
-
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, .3) 50%, rgba(0, 0, 0, .7) 50%);
+  background-size: 3px 3px;
+  z-index: 2;
+}
+.play-btn {
+    position: absolute;
+    bottom: calc(50% - 50px);
+    right: calc(50% - 50px);
+    height: 100px;
+    width: 100px;
+}
+.play-btn:hover,
+.play-btn:focus {
+  transform: scale(0.8);
+  transition: all 0.2s ease-in;
+}
 footer p {
   font-family: 'Inter', sans-serif;
+  color: #fff;
   font-size: 20px;
-  font-weight: 900;
   letter-spacing: 0.5px;
   line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 // Modal
