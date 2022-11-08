@@ -9,7 +9,7 @@ import "../../node_modules/bootstrap/js/dist/modal.js";
 // createWidget('<form-id>', options);
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
 // Gets the video src from the data-src on each button
 
@@ -37,7 +37,7 @@ $('#myModal').on('hide.bs.modal', function (e) {
     $("#video").attr('src',$videoSrc); 
 }) 
 // document ready  
-});
+// });
 
 
 
