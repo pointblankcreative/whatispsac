@@ -9,7 +9,7 @@ import "../../node_modules/bootstrap/js/dist/modal.js";
 // createWidget('<form-id>', options);
 
 
-// $(document).ready(function() {
+$(document).ready(function() {
 
 // Gets the video src from the data-src on each button
 
@@ -20,7 +20,6 @@ $('.video-btn').click(function() {
 console.log($videoSrc);
 
   
-  
 // when the modal is opened autoplay it  
 $('#myModal').on('shown.bs.modal', function (e) {
     
@@ -28,7 +27,6 @@ $('#myModal').on('shown.bs.modal', function (e) {
 $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
 
 })
-  
 
 
 // stop playing the youtube video when I close the modal
@@ -37,7 +35,7 @@ $('#myModal').on('hide.bs.modal', function (e) {
     $("#video").attr('src',$videoSrc); 
 }) 
 // document ready  
-// });
+});
 
 
 

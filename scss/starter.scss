@@ -115,12 +115,6 @@ img {
   width: 365px;
   margin: 10px;
 }
-
-// .noisy {
-//   background: linear-gradient(0deg, rgba(127,14,143,1), rgba(0,0,0,0)), url(https://grainy-gradients.vercel.app/noise.svg);
-//   height: fit-content;
-// }
-
 h1 {
   font-family: 'Passion One', cursive;
   font-size: 46px;
@@ -145,10 +139,6 @@ p {
 }
 .gears-icon {
   max-width: 200px;
-}
-.image-container {
-  position: relative;
-  display: inline-block;
 }
 .overlay {
   width: 100%;
@@ -209,6 +199,8 @@ footer p {
   font-size: 36px;
   letter-spacing: 0.72px;
   line-height: 54px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .modal-body a {
@@ -217,6 +209,7 @@ footer p {
   font-weight: 900;
   letter-spacing: 0.28px;
   line-height: 17px;
+  text-transform: uppercase;
   img {
     width: 27px;
     height: 27px;
