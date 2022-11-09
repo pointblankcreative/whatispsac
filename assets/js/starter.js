@@ -8,39 +8,28 @@ import "../../node_modules/bootstrap/js/dist/modal.js";
 
 // createWidget('<form-id>', options);
 
+$(function () {
 
-$(document).ready(function() {
+    // Gets the video src from the data-src on each button
+    var $videoSrc;
+    $('.video-btn').on('click', function () {
+        $videoSrc = $(this).data("src");
+        console.log($videoSrc);
+        $('#myModal').modal('show');
+    });
+    
+    // when the modal is opened autoplay it  
+    $('#myModal').on('shown.bs.modal', function (e) {
 
-// Gets the video src from the data-src on each button
+        // set the video src to autoplay and not to show related video. 
+        $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+    })
 
-var $videoSrc;  
-$('.video-btn').click(function() {
-    $videoSrc = $(this).data( "src" );
+    // stop playing the youtube video when I close the modal
+    $('#myModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#video").attr('src', $videoSrc);
+    })
+
+    // document ready  
 });
-console.log($videoSrc);
-
-
-// when the modal is opened autoplay it  
-$('#myModal').on('shown.bs.modal', function (e) {
-    
-// set the video src to autoplay and not to show related video. 
-$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
-})
-
-
-
-// stop playing the youtube video when I close the modal
-$('#myModal').on('hide.bs.modal', function (e) {
-    // a poor man's stop video
-    $("#video").attr('src',$videoSrc); 
-}) 
-    
-    
-
-
-  
-  
-// document ready  
-});
-
-
