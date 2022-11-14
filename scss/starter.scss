@@ -203,7 +203,7 @@ footer p {
   color: #fff;
 }
 
-.modal-body a {
+.modal-body a, .score a {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 900;
@@ -211,8 +211,19 @@ footer p {
   line-height: 17px;
   text-transform: uppercase;
   img {
-    width: 27px;
-    height: 27px;
+    width: 35px;
+    height: 35px;
     display: inline;
+    margin-right: 8px;
   }
+}
+
+// Thank You
+.score a {
+  border-radius: 0px;
+  border: none;
+  background-color: #DDFFBA;
+  text-align: left;
+  font-size: 12px;
+  line-height: 15px;
 }
