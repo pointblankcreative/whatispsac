@@ -113,7 +113,6 @@ img {
 .logo-cont {
   height: 65px;
   width: 365px;
-  margin: 10px;
 }
 h1 {
   font-family: 'Passion One', cursive;
@@ -219,6 +218,19 @@ footer p {
 }
 
 // Thank You
+.score h1 {
+  font-size: 66px;
+  letter-spacing: 1.3px;
+  line-height: 70px;
+}
+
+.score h2 {
+  color: white;
+  font-size: 48px;
+  letter-spacing: 1.3px;
+  line-height: 52px;
+}
+
 .score a {
   border-radius: 0px;
   border: none;

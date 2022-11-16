@@ -22,8 +22,8 @@
 <body>
     <div class="container-fluid">
         <!-- HEADER START -->
-        <header class="container-fluid bg-dark p-4">
-            <div class="row">
+        <header>
+            <div class="container-fluid bg-dark p-4">
                 <div class="logo-cont m-auto m-md-0">
                     <img src="./assets/img/WTF.png" alt="WTF is PSAC Prairies?">
                 </div>
@@ -33,9 +33,15 @@
 
         <!-- MAIN START -->
         <main>
-            <div class="container-fluid bg-primary p-4" style="background-image: url('./assets/img/Background.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+            <div class="score container-fluid p-4"
+                style="background-image: url('./assets/img/Background.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
                 <div class="row p-4">
-                    <h1>Thanks for taking our quiz</h1>
+                    <h1 class="container-fluid">
+                        You scored 1/4
+                    </h1>
+                    <h2 class="container-fluid">
+                        Thanks for taking our quiz!
+                    </h2>
                 </div>
             </div>
 
@@ -43,13 +49,12 @@
                 <div class="row no-gutters">
                     <div class="score bg-success col-sm-12 col-lg-4 p-4 d-flex-lg-column">
                         <div class="col col-lg-12">
-                            <h2>You Scored 1/4</h2>
                             <p>Share your results on social media so more folks can join in on the fun?</p>
                             <div class="score flex-column">
 
-                                <a href="#" class="btn col-6 col-md-4 col-lg-9 col-xl-12 my-2 p-2"><img src="./assets/img/FB.png" alt="Facebook logo">Share on Facebook</a>
+                                <a href="#" class="btn col-9 col-md-4 col-lg-9 col-xl-12 my-2 p-2"><img src="./assets/img/FB.png" alt="Facebook logo">Share on Facebook</a>
 
-                                <a href="#" class="btn col-6 col-md-4 col-lg-9 col-xl-12 my-2 p-2"><img src="./assets/img/TW.png" alt="Twitter logo">Share on Twitter</a>
+                                <a href="#" class="btn col-9 col-md-4 col-lg-9 col-xl-12 my-2 p-2"><img src="./assets/img/TW.png" alt="Twitter logo">Share on Twitter</a>
 
                             </div>
                         </div>
@@ -72,8 +77,8 @@
         <!-- MAIN END -->
 
         <!-- FOOTER -->
-        <footer class="container-fluid bg-dark">
-            <div class="no-gutters d-flex flex-column flex-md-row justify-content-between align-items-end flex-wrap p-4">
+        <footer>
+            <div class="container-fluid bg-dark no-gutters d-flex flex-column flex-md-row justify-content-between align-items-end flex-wrap p-4">
         
                 <div class="col-sm-12 col-lg-6">
                     <p>Prairies.psac.ca</p>
