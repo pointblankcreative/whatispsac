@@ -129,7 +129,22 @@ h2 {
   text-transform: uppercase;
   color: $warning;
 }
+h3, h4, p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+h4, p {
+  color: $primary;
+}
 p {
+  font-weight: 400;
+}
+.aside-text {
   font-family: 'Pragati Narrow', sans-serif;
   font-size: 24px;
   line-height: 26px;
@@ -240,6 +255,3 @@ footer p {
   line-height: 15px;
 }
 
-.StickyFooter-sc-__sc-1ndopc5-10.YwhmM {
-  display: none !important;
-}
