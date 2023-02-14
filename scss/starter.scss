@@ -143,6 +143,7 @@ h4, p {
 }
 p {
   font-weight: 400;
+  margin-bottom: 10px;
 }
 .aside-text {
   font-family: 'Pragati Narrow', sans-serif;
@@ -262,3 +263,6 @@ footer p {
   line-height: 15px;
 }
 
+.source-link {
+  text-decoration: underline;
+}
